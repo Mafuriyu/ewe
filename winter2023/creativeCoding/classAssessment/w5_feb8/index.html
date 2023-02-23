@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body id="mainBody">
+    <div class="container">
+        <h1 class="mt-5">My grade is: <span id="myGrade">f</span ></h1>
+      </div>
+      <hr>
+      <h3>Your Grade is: <span id="gradeOutput"></span ></h3>
+    </div>
+    
+    <script>
+        let myGrade = document.getElementById("myGrade").innerHTML;
+        let gradeOutput = document.getElementById("gradeOutput");
+
+    // if(myGrade > 90){
+    //   gradeOutput.innerHTML = "Exceptional, Well done!";
+    // }
+    // else if(myGrade > 80){
+    //   gradeOutput.innerHTML = "Good job!";
+    // }
+    // else if(myGrade > 70){
+    //   gradeOutput.innerHTML = "Decent job!";
+    // }
+    // else if(myGrade > 60){
+    //   gradeOutput.innerHTML = "You passed";
+    // }
+    // else if(myGrade > 50){
+    //   gradeOutput.innerHTML = "You barely survived!";
+    // }
+    // else if(myGrade < 49){
+    //   gradeOutput.innerHTML = "Uh ohhhh, mission failed";
+    // }
+    // else{
+    //   gradeOutput.innerHTML = "You did not finish your class";
+    // }
+
+    // if(myGrade >= 80 ){
+    //   if (myGrade >= 95){
+    //     gradeOutput.innerHTML = "A+ Grade";
+    //     document.getElementById("mainBody").style.background = "green";
+    //   }
+    //   else if(myGrade <= 85){
+    //     gradeOutput.innerHTML = "A- Grade";
+    //     document.getElementById("mainBody").style.background = "orange";
+    //   }
+    //   else if(myGrade >= 84 && myGrade <=94) {
+    //     gradeOutput.innerHTML = "A grade!";
+    //     document.getElementById("mainBody").style.background = "yellow";
+    //   }
+    // }
+    // else if(myGrade >= 60 && myGrade < 80){
+    //   gradeOutput.innerHTML = "B Grade!";
+    //   document.getElementById("mainBody").style.background = "orange";
+    // }   
+    // else{
+    //   gradeOutput.innerHTML = "Low grade";
+    //   document.getElementById("mainBody").style.background = "red";
+    // }   
+
+    switch (myGrade){
+        case "+A":
+            gradeOutput.innerHTML = "is between 100 and 95";
+            break;
+
+        case "A":
+            gradeOutput.innerHTML = "is between 94 and 85";
+            break;
+            
+        case "-A":
+            gradeOutput.innerHTML = "is between 84 and 80";
+            break;
+
+        case "B":
+            gradeOutput.innerHTML = "is between 79 and 60";
+            break;
+            
+        case "F" || "f":
+            gradeOutput.innerHTML = "is below 60";
+
+        default:
+            gradeOutput.innerHTML = "Please input valid letter grades.";
+
+
+
+
+    }
+
+    </script>
+    
+</body>
+</html>

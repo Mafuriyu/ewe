@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <title>document</title>
+</head>
+<body onload="onloadAlert()">
+    <!-- Navigation and Header -->
+    <Header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Heading: Brief Introductory -->
+        <article>
+            <img src="assets/images/profile.PNG" alt="profile" height="400" onmouseover="onHover(this)" onmouseout="onHoverOut(this)">
+            <h1 id="myP" onclick="changeColor(this)" style="color:#e67795;">Hi! I'm Mafuriyu</h1>
+            <p>I'm a freelance illustrator and a student at Humber College! <br>
+                I like creating artworks, exploring new things, and visualizing designs and 
+                illustrations.
+            </p>
+            <p> My artworks are highly stylized, with a pastel color palette. I like
+                playing around with colors, and making my artworks worth a head turn!
+            </p>
+        <!-- Learn More Button -->
+            <button onclick="onClickLearnMore(this)">
+                learn more
+            </button>
+
+            <button onclick="onClickGreeting(this)">
+                Greetings!
+            </button>
+        </article>
+
+        <!-- Divider: To prepare for the overview Content -->
+        <div class="divider">
+            <h2>Things I'm currently doing</h2>
+        </div>
+
+        <!-- Section Content: List of current activities -->
+        <section id="overview">
+            
+            <div>
+                <h3>Programming</h3>
+                <ul>
+                    <li>Unity Game Programming (C#) </li>
+                    <li>C++</li>
+                    <li>HTML and CSS</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Arts</h3>
+                <ul>
+                    <li>Poster Design</li>
+                    <li>Vector Art</li>
+                    <li>Illustration</li>
+                    <li>2D Animation</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Softwares</h3>
+                <ul>
+                    <li>Blender</li>
+                    <li>Maya</li>
+                    <li>Nomad Sculpt</li>
+                    <li>Procreate</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adober After Effects</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Crafts</h3>
+                <ul>
+                    <li>Crochet</li>
+                    <li>Clay Modelling</li>
+                    <li>Sewing</li>
+                    <li>Embroidery</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Painting</li>
+                    <li>Cosplay</li>
+                    <li>Playing Games</li>
+                </ul>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> &copy; Mafuriyu 2017</p>
+    </footer>
+</body>
+</html>
