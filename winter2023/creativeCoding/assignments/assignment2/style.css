@@ -1,0 +1,30 @@
+*{
+    margin: 20px;
+    padding: 0px;
+}
+
+.icon {
+    transition:ease 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+#hearts{
+    text-align: center;
+    width: 300px;
+    border: solid black;
+}
+
+.blue{
+    border: solid blue;
+}
+
+.red{
+    border: solid red;
+}
+
+.yellow{
+    border: solid yellow;
+}
