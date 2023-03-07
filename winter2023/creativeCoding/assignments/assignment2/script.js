@@ -6,16 +6,8 @@ var redCount = 0;
 var yellowCount = 0;
 
 var blue1Pressed = Boolean(false);
-var blue2Pressed = Boolean(false);
-var blue3Pressed = Boolean(false);
-
 var red1Pressed = Boolean(false);
-var red2Pressed = Boolean(false);
-var red3Pressed = Boolean(false);
-
 var yellow1Pressed = Boolean(false);
-var yellow2Pressed = Boolean(false);
-var yellow3Pressed = Boolean(false);
 
 function startUp() {
     document.getElementById("blueCount").innerHTML = blueCount;
@@ -36,7 +28,7 @@ function buttonPressedBlue1(img){
         else {}
     }
     else if(blue1Pressed == true){
-        if((num <= 3) && (num > 0)){
+        if((num <= 3) && (num >= 0)){
             num +=1;
             blueCount -= 1;
             blue1Pressed = !blue1Pressed;
@@ -45,6 +37,45 @@ function buttonPressedBlue1(img){
         }
         else {}
     }
+
+    // blue + red + yellow = brown
+    if((blue1Pressed == true) && (red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(110, 38, 14)";
+    }
+    // blue + red = violet
+    else if ((blue1Pressed == true) && red1Pressed == true){
+        document.getElementById("title").style.color="rgb(127, 0, 255)";
+    }
+    // blue + yellow = green
+    else if((blue1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(0, 255, 0)";
+    }
+
+    // red + yellow = orange
+    else if((red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(255, 165, 0)";
+    }
+    
+    // red = red
+    else if(red1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,0,0)";
+    }
+
+    // yellow = yellow
+    else if(yellow1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,255,0)";
+    }
+
+    // blue = blue
+    else if(blue1Pressed == true){
+        document.getElementById("title").style.color="rgb(0,0,255)";
+    }
+
+    //default
+    else{
+        document.getElementById("title").style.color="rgb(0, 0, 0)";
+    }
+
 }
 
 function buttonPressedRed1(img){
@@ -68,6 +99,45 @@ function buttonPressedRed1(img){
         }
         else{}
     }
+
+    // blue + red + yellow = brown
+    if((blue1Pressed == true) && (red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(110, 38, 14)";
+    }
+    // blue + red = violet
+    else if ((blue1Pressed == true) && red1Pressed == true){
+        document.getElementById("title").style.color="rgb(127, 0, 255)";
+    }
+    // blue + yellow = green
+    else if((blue1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(0, 255, 0)";
+    }
+
+    // red + yellow = orange
+    else if((red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(255, 165, 0)";
+    }
+    
+    // red = red
+    else if(red1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,0,0)";
+    }
+
+    // yellow = yellow
+    else if(yellow1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,255,0)";
+    }
+
+    // blue = blue
+    else if(blue1Pressed == true){
+        document.getElementById("title").style.color="rgb(0,0,255)";
+    }
+
+    //default
+    else{
+        document.getElementById("title").style.color="rgb(0, 0, 0)";
+    }
+
 }
 
 function buttonPressedYellow1(){
@@ -90,6 +160,44 @@ function buttonPressedYellow1(){
             document.getElementById("yellowCount").innerHTML = yellowCount;
         }
         else{}
+    }
+
+    // blue + red + yellow = brown
+    if((blue1Pressed == true) && (red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(110, 38, 14)";
+    }
+    // blue + red = violet
+    else if ((blue1Pressed == true) && red1Pressed == true){
+        document.getElementById("title").style.color="rgb(127, 0, 255)";
+    }
+    // blue + yellow = green
+    else if((blue1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(0, 255, 0)";
+    }
+
+    // red + yellow = orange
+    else if((red1Pressed == true) && (yellow1Pressed == true)){
+        document.getElementById("title").style.color="rgb(255, 165, 0)";
+    }
+    
+    // red = red
+    else if(red1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,0,0)";
+    }
+
+    // yellow = yellow
+    else if(yellow1Pressed == true){
+        document.getElementById("title").style.color="rgb(255,255,0)";
+    }
+
+    // blue = blue
+    else if(blue1Pressed == true){
+        document.getElementById("title").style.color="rgb(0,0,255)";
+    }
+
+    //default
+    else{
+        document.getElementById("title").style.color="rgb(0, 0, 0)";
     }
 }
 
