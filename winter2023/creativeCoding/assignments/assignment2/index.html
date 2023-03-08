@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
     <title>Document</title>
 </head>
 <body onload="startUp()">
-    <div class="title">
-        <h1 id="title" >Color Mixer</h1>
-        <h2> 
-            <span id="blueCount"></span> 
-            <span id="redCount"></span>
-            <span id="yellowCount"></span>
-        </h2>
+
+    <div class="mainTitle">
+        <h1>Decora Me!</h1>
     </div>
 
-    <div class="card" >
-        <h2>Pick <span id="num"></span>color cards</h2>
-        <div id="hearts" class="card">
-            <img class="icon blue" id="blue" onclick="buttonPressedBlue1(this)" src="images/heart.svg">
+    <main>
+        <section>
+            <div class="title">
+                <h1 id="title" >Color Mixer</h1>
+                <h2> 
+                    <span id="blueCount"></span> 
+                    <span id="redCount"></span>
+                    <span id="yellowCount"></span>
+                </h2>
+            </div>
 
-            <img class="icon red" id="red" onclick="buttonPressedRed1(this)"
-             src="images/heart.svg">
+            <div>
+                <h2> <span id="mixedColor">Normal</span> </h2>
+            </div>
+        
+            <div class="colorCard" id ="colorCard" >
+                <h2>Pick <span id="num"></span>color cards</h2>
+                <div class="card" id="hearts">
+                    <img class="icon blue" id="blue" onclick="buttonPressed(this)" src="assets/images/heart.svg">
+                    <img class="icon red" id="red" onclick="buttonPressed(this)" src="assets/images/heart.svg">
+                    <img class="icon yellow" id="yellow" onclick="buttonPressed(this)" src="assets/images/heart.svg">
+                </div>
+            </div>
 
-            <img class="icon yellow" id="yellow"onclick="buttonPressedYellow1(this)"
-             src="images/heart.svg">
-
- <!--
-             <img class="icon blue" id="blue" onclick="buttonPressedBlue2(this)" src="images/heart.svg">
-
-            <img class="icon red" id="red" onclick="buttonPressedRed2(this)"
-             src="images/heart.svg">
-
-
-            <img class="icon yellow" id="yellow"onclick="buttonPressedYellow2(this)"
-             src="images/heart.svg">
-
-             <img class="icon blue" id="blue" onclick="buttonPressedBlue3(this)" src="images/heart.svg">
-
-            <img class="icon red" id="red" onclick="buttonPressedRed3(this)"
-             src="images/heart.svg">
-
-
-            <img class="icon yellow" id="yellow"onclick="buttonPressedYellow3(this)"
-             src="images/heart.svg"> -->
-       
-            
+        </section>
+        
+        <div class = "character">
+            <img src="assets/images/defaultChara.png" height ="600px" id ="character">
         </div>
-        
 
-        
-    </div>
+    </main>
 
     
     

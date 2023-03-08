@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&family=Short+Stack&display=swap');
+*{
+    margin: 10px;
+    padding: 0px;
+    justify-content: center;
+
+    font-family: Short Stack;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+section{
+    width: 400px;
+    padding-top: 100px;
+
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Pacifico;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#hearts{
+    width: 350px;
+    padding: 20px 0px 20px 0;
+}
+
+div.character{
+    width: 500px;
+}
+
+div.mainTitle{
+    text-align: center;
+}
+
+div.card{
+    justify-content: center;
+}
+
+.icon {
+    transition:ease 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+.blue{
+    border: solid blue;
+}
+
+.red{
+    border: solid red;
+}
+
+.yellow{
+    border: solid yellow;
+}
