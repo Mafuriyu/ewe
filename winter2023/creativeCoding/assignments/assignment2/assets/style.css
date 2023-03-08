@@ -12,13 +12,11 @@ main{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-
 }
 
 section{
     width: 400px;
     padding-top: 100px;
-
     text-align: center;
 }
 

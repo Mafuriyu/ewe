@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js"></script>
-    <title>Document</title>
+    <title>Decora</title>
 </head>
 <body onload="startUp()">
 
+    <!-- The title of the webpage -->
     <div class="mainTitle">
         <h1>Decora Me!</h1>
     </div>
-
+    
+    <!-- Put all the content in main -->
     <main>
+        <!-- This is for the Color Mixer, the color calls, and Color Cards-->
         <section>
+            <!-- Title and Counter/Color Labeler -->
             <div class="title">
                 <h2 id="title" >Color Mixer</h2>
                 <h2> chosen: <span id="blueCount"></span> <span id="redCount"></span><span id="yellowCount"></span></h2>
             </div>
 
+            <!-- Type of Decora Label -->
             <div>
                 <h2> <span id="mixedColor">Normal</span> </h2>
             </div>
-        
+
+            <!-- Color Picker -->
             <div class="colorCard" id ="colorCard" >
                 <h2>Pick <span id="num"></span>color cards</h2>
                 <div class="card" id="hearts">
@@ -35,7 +41,8 @@
             </div>
 
         </section>
-        
+
+        <!-- Character Image -->
         <div class = "character">
             <img src="assets/images/defaultChara.png" height ="600" id ="character" alt="character">
         </div>
