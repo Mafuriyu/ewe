@@ -17,12 +17,8 @@
     <main>
         <section>
             <div class="title">
-                <h1 id="title" >Color Mixer</h1>
-                <h2> 
-                    <span id="blueCount"></span> 
-                    <span id="redCount"></span>
-                    <span id="yellowCount"></span>
-                </h2>
+                <h2 id="title" >Color Mixer</h2>
+                <h2> chosen: <span id="blueCount"></span> <span id="redCount"></span><span id="yellowCount"></span></h2>
             </div>
 
             <div>
@@ -32,16 +28,16 @@
             <div class="colorCard" id ="colorCard" >
                 <h2>Pick <span id="num"></span>color cards</h2>
                 <div class="card" id="hearts">
-                    <img class="icon blue" id="blue" onclick="buttonPressed(this)" src="assets/images/heart.svg">
-                    <img class="icon red" id="red" onclick="buttonPressed(this)" src="assets/images/heart.svg">
-                    <img class="icon yellow" id="yellow" onclick="buttonPressed(this)" src="assets/images/heart.svg">
+                    <img class="icon blue" id="blue" onclick="buttonPressed(this)" src="assets/images/heart.svg" alt="blueCard">
+                    <img class="icon red" id="red" onclick="buttonPressed(this)" src="assets/images/heart.svg" alt="redCard">
+                    <img class="icon yellow" id="yellow" onclick="buttonPressed(this)" src="assets/images/heart.svg" alt="yellowCard">
                 </div>
             </div>
 
         </section>
         
         <div class = "character">
-            <img src="assets/images/defaultChara.png" height ="600px" id ="character">
+            <img src="assets/images/defaultChara.png" height ="600" id ="character" alt="character">
         </div>
 
     </main>

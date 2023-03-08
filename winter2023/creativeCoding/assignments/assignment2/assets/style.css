@@ -26,6 +26,10 @@ h1, h2 {
     font-family: Pacifico;
 }
 
+h2#title{
+    font-size: 50px;
+}
+
 h1{
     font-size: 50px;
 }
