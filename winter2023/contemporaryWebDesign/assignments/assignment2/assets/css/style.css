@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Montserrat;
+}
+
+h1,h2,h3{
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+}
+
+nav{
+    background-color: #BB6DEE ;
+    padding: 15px;;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav > ul > li {
+    margin: 15px;
+    padding: 10px;
+    border: solid aliceblue;
+    border-radius: 3px;
+}
+
+nav > ul > li > a {
+    color:aliceblue
+}
+
+button:hover {
+    opacity:1;
+}
+
+td, th {
+    border: 1px solid #d1d1e0;
+    text-align: left;
+    padding: 20px;
+}
+
+th{
+    text-align: center;
+}
+
+td.price{
+    text-align: right;
+}
+
+td.quantity, td.size{
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p{
+    padding: 5px;
+}
+
+.banner{
+    padding: 30px 0px;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    margin: auto;
+    border-top: solid gainsboro;
+    width: 1000px;
+    padding: 30px;
+}
+
+.imageSet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.product{
+    width:200px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.product > img{
+    transition: ease 0.2s;
+    height: 250px;
+    width: 200px;
+    object-fit:cover;
+
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+.product > img:hover{
+    transform: scale(1.05);
+}
+
+.form{
+    padding: 50px;
+}
+.form > label{
+    font-weight: 600;
+    display: block;
+}
+
+.form > input{
+    margin-bottom: 20px;
+}
+
+.checkout{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 50px;;
+    background-color: #d1d1e0;
+}
+
+#quickMenuContainer{
+    position: absolute;
+    right: 30px;
+}
+
+#quickMenu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: right;
+    align-items:center;
+}
+
+#quickMenu > a > img:hover{
+    transform: scale(1.05);
+}
+
+#formContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#signUp{
+    border: solid #d1d1e0;
+    border-radius: 10px;
+}
+
+#socialMediaIcons > a > img{
+    height: 25px;
+    padding: 20px;
+}
+
+
