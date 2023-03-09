@@ -8,13 +8,15 @@
     font-family: Montserrat;
 }
 
+
 h1,h2,h3{
     font-weight: 600;
 }
 
 nav{
     background-color: #BB6DEE ;
-    padding: 15px;;
+    padding: 15px;
+    overflow: hidden;
 }
 
 button:hover {
@@ -38,7 +40,6 @@ td.price{
 td.quantity, td.size{
     text-align: center;
 }
-
 
 footer{
     text-align: center;
@@ -65,13 +66,21 @@ footer > p{
 }
 .topWide > ul > li {
     margin: 15px;
-    padding: 10px;
+    padding: 5px;
     border: solid aliceblue;
     border-radius: 3px;
 }
 
-.topWide > ul > li > a {
+.topWide> ul > li > a {
     color:aliceblue
+}
+
+.topMobile > ul > li > a {
+    color:aliceblue
+}
+
+.topMobile > ul > li {
+    padding: 10px;
 }
 
 .banner{
@@ -139,8 +148,13 @@ footer > p{
     margin-top: 10px;
     padding: 50px;
     background-color: #d1d1e0;
+}
 
-
+.contentTable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid #d1d1e0;
 }
 
 #quickMenuContainer{
@@ -176,8 +190,49 @@ footer > p{
     padding: 20px;
 }
 
+#shoppingCart{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* to hide the mobile navigation when in desktop */
+@media screen and (min-width: 691px){
+    .topMobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    table{
+        transform: scale(0.75);
+    }
+}
+
 /* mobile */
-@media (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 690px) {
+    #menu{
+        display: none;
+    }
+    #quickMenuContainer{
+        top: 70px;
+    }
+
+    #quickMenuContainer > p > a{
+        color: aliceblue;
+    }
+
+    #quickMenu{
+        padding-top: 15px;
+    }
+
+    .navExpanded {
+        height: 250px;
+    }
+    .dropDown{
+        display: block;
+
+    }
 
     .topWide{
         display: none;
@@ -190,7 +245,6 @@ footer > p{
     .imageSet{
         flex-direction: column;
         align-items: center;
-        
     }
 
     .banner > img{
