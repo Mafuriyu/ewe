@@ -1,5 +1,5 @@
 function toggleMenu(){
-    var x = document.getElementById("menu");
+    var x = document.getElementById("menuMobile");
     if (x.style.display === "none") {
         x.style.display = "block";
     } 

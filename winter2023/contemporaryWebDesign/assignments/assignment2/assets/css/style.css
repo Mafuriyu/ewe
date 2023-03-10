@@ -190,7 +190,7 @@ footer > p{
     padding: 20px;
 }
 
-#shoppingCart{
+#shoppingCartText{
     text-align: center;
     padding: 10px;
 }
@@ -205,19 +205,27 @@ footer > p{
 
 /* mobile */
 @media screen and (min-width: 0px) and (max-width: 690px) {
-    #menu{
+    #menuMobile{
         display: none;
     }
-    #quickMenuContainer{
-        top: 70px;
+    #quickMenuContainerMobile{
+        position: absolute;
+        right: 30px;
+        top: 30px;
     }
 
-    #quickMenuContainer > p > a{
+    #quickMenuContainerMobile > p > a{
         color: aliceblue;
     }
 
-    #quickMenu{
-        padding-top: 15px;
+    #quickMenuMobile{
+        padding-top: 15px; 
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: right;
+        align-items:center;
+        
     }
 
     #tableContent{

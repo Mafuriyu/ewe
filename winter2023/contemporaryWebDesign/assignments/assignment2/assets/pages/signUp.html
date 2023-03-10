@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 
     <title>SignUp</title>
 </head>
@@ -32,13 +33,13 @@
             </div>
     
             <div class="topMobile">
-                <img src="../images/iconMenu.svg" height="50" class="dropDown" onclick="toggleMenu()">
+                <img src="../images/iconMenu.svg" height="50" class="dropDown" onclick="toggleMenu()" alt="drop down icon">
     
-                <div class="topMobile" id="menu">
-                    <div id="quickMenuContainer">
+                <div class="topMobile" id="menuMobile">
+                    <div id="quickMenuContainerMobile">
                         <p><a href="../pages/signUp.html">Sign in or Create an Account</a></p>
             
-                        <div id="quickMenu">
+                        <div id="quickMenuMobile">
                             <form><input type="text" placeholder="Search"> </form>
                             <a href="../pages/cart.html"><img src="../images/iconCart.svg" height="30" alt="Shopping Cart"></a>
                         </div>
@@ -68,29 +69,29 @@
         <section class="form" id="formContainer">
                 <form class="form" id="signUp"> 
                     <label for="email">Email</label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input id="email" type="text" placeholder="Enter Email" name="email" required>
       
                     <label for="fName">Name</label>
-                    <input type="text" placeholder="First Name" name="fName" required>
-                    <input type="text" placeholder="Last Name" name="lName" required>
+                    <input id="fName" type="text" placeholder="First Name" name="fName" required>
+                    <input id="lName" type="text" placeholder="Last Name" name="lName" required>
       
-                    <label for="lName">Birthday</label>
-                    <input type="date" placeholder="Enter Email" name="email" required>
+                    <label for="bday">Birthday</label>
+                    <input id="bday" type="date" name="email" required>
                 
                     <label for="psw">Password</label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
 
                     <div id="newsletterFreq">
                         <h3>Newsletter Frequency</h3>
 
-                        <input type="radio" name="nlf" value="everyWeek">
+                        <input id="nf1" type="radio" name="nlf" value="everyWeek">
                         <label for="nf1">Every Week</label> <br>
 
                         <input type="radio" name="nlf" value="everyMonth">
-                        <label for="nf2">Every Month</label> <br>
+                        <label for="nf1">Every Month</label> <br>
 
                         <input type="radio" name="nlf" value="Never">
-                        <label for="nf3">Never</label>
+                        <label for="nf1">Never</label>
                     </div>
                     
                 

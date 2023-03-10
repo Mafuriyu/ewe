@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 
     <title>ShoppingCart</title>
 </head>
@@ -32,13 +33,13 @@
             </div>
     
             <div class="topMobile">
-                <img src="../images/iconMenu.svg" height="50" class="dropDown" onclick="toggleMenu()">
+                <img src="../images/iconMenu.svg" height="50" class="dropDown" onclick="toggleMenu()" alt="drop down icon">
     
-                <div class="topMobile" id="menu">
-                    <div id="quickMenuContainer">
+                <div class="topMobile" id="menuMobile">
+                    <div id="quickMenuContainerMobile">
                         <p><a href="../pages/signUp.html">Sign in or Create an Account</a></p>
             
-                        <div id="quickMenu">
+                        <div id="quickMenuMobile">
                             <form><input type="text" placeholder="Search"> </form>
                             <a href="../pages/cart.html"><img src="../images/iconCart.svg" height="30" alt="Shopping Cart"></a>
                         </div>
@@ -62,7 +63,7 @@
         <div class="banner">
             <img src="../images/bannerPay.webp" alt="Shipping and Payment Modes">
         </div>
-        <h1 id="shoppingCart">Shopping Cart</h1>
+        <h1 id="shoppingCartText">Shopping Cart</h1>
         
         <div class="contentTable" id="tableContent">
             <table id="shoppingCartTotal">
@@ -74,7 +75,7 @@
                     <th>Price</th>
                 </tr>
                 <tr>
-                    <td><img src="../images/prodNewCos1.webp" width="150"></td> 
+                    <td><img src="../images/prodNewCos1.webp" width="150" alt="product1"></td> 
                     <td>[PREORDER] [DEPOSIT] 1/3 DELUSION GENSHIN IMPACT - WANDERER MUSHROOM BABY CAT COSTUME</td>
                     <td class="size">Large</td>
                     <td class="quantity">1</td>
@@ -82,35 +83,35 @@
                   
                 </tr>
                 <tr>
-                    <td><img src="../images/prodPopMerch1.webp" width="150"></td>
+                    <td><img src="../images/prodPopMerch1.webp" width="150" alt="product2"></td>
                     <td>[PREORDER][OFFICIAL] GENSHIN IMPACT KLEE JUMPY DUMPTY CERAMIC MUG</td>
                     <td class="size">N/A</td>
                     <td class="quantity">3</td>
                     <td class="price">1,690</td>
                 </tr>
                 <tr>
-                    <td><img src="../images/prodPopCos1.webp" width="150"></td>
+                    <td><img src="../images/prodPopCos1.webp" width="150" alt="product3"></td>
                   <td>[GENSHIN IMPACT] 1/3 DELUSION KAZUHA KAEDEHARA SWEATER, SHIRT AND PANTS CASUAL SET</td>
                   <td class="size">Large</td>
                   <td class="quantity">2</td>
                   <td class="price">2,590</td>
                 </tr>
                 <tr>
-                    <td><img src="../images/prodPopCos2.webp" width="150"></td>
+                    <td><img src="../images/prodPopCos2.webp" width="150" alt="product4"></td>
                   <td>[PREORDER] GENSHIN IMPACT CHILDE TARTAGLIA COAT</td>
                   <td class="size">Large</td>
                   <td class="quantity">2</td>
                   <td class="price">3,800</td>
                 </tr>
                 <tr>
-                    <td><img src="../images/prodNewWig1.webp" width="150"></td>
+                    <td><img src="../images/prodNewWig1.webp" width="150" alt="product5"></td>
                   <td>[PREORDER] YILIANG LEAGUE OF LEGENDS PAPER-CUT FAIRY NEW YEAR KNIFE GIRL IRELIA COS WIG GRADIENT</td>
                   <td class="size">N/A</td>
                   <td class="quantity">1</td>
                   <td class="price">1,550</td>
                 </tr>
                 <tr>
-                    <td><img src="../images/prodNewCos2.jpg" width="150"></td>
+                    <td><img src="../images/prodNewCos2.jpg" width="150" alt="product6"></td>
                   <td>[PRESALE][DEPOSIT ONLY] 1/3 DELUSION GENSHIN IMPACT ROSARIA NEW SKIN COSPLAY COSTUME</td>
                   <td class="size">Large</td>
                   <td class="quantity">1</td>
