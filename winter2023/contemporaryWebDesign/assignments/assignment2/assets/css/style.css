@@ -203,12 +203,6 @@ footer > p{
     }
 }
 
-@media screen and (max-width: 900px) {
-    table{
-        transform: scale(0.75);
-    }
-}
-
 /* mobile */
 @media screen and (min-width: 0px) and (max-width: 690px) {
     #menu{
@@ -224,6 +218,12 @@ footer > p{
 
     #quickMenu{
         padding-top: 15px;
+    }
+
+    #tableContent{
+        width: 690px;
+        height: 900px;
+        overflow: scroll;
     }
 
     .navExpanded {
