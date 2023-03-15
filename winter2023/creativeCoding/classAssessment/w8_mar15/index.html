@@ -1,0 +1,20 @@
+<script>
+    function increaseFontSize(){
+      var paragraphs = document.getElementsByTagName("p");
+      console.log(paragraphs)
+      for (var i = 0;i < paragraphs.length; i++){
+          // fontSize =  paragraphs[i].style.fontSize; console.log(fontSize);
+          // fontSize = parseInt(fontSize);
+          paragraphs[i].style.fontSize = "24px";
+      }
+    }
+    function decreaseFontSize(){
+      var paragraphs = document.getElementsByTagName("p");
+      console.log(paragraphs)
+      for (var i = 0;i < paragraphs.length; i++){
+          // fontSize =  paragraphs[i].style.fontSize; console.log(fontSize);
+          // fontSize = parseInt(fontSize);
+          paragraphs[i].style.fontSize = "18px";
+      }
+    }
+  </script>
