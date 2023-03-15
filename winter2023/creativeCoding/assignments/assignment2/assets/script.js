@@ -100,54 +100,54 @@ function buttonPressed(img){
     // blue + red + yellow = brown
     if((bluePressed == true) && (redPressed == true) && (yellowPressed == true)){
         document.getElementById("title").style.color="rgb(110, 38, 14)";
-        document.getElementById("character").src = "assets/images/chocoChara.png";
+        document.getElementById("character").src = "assets/images/chocoChara.PNG";
         document.getElementById("mixedColor").innerHTML="Choco Decora";
     }
     // blue + red = violet
     else if ((bluePressed == true) && redPressed == true){
         document.getElementById("title").style.color="rgb(127, 0, 255)";
-        document.getElementById("character").src = "assets/images/violetChara.png";
+        document.getElementById("character").src = "assets/images/violetChara.PNG";
         document.getElementById("mixedColor").innerHTML="Lavender Decora";
     }
     // blue + yellow = green
     else if((bluePressed == true) && (yellowPressed == true)){
         document.getElementById("title").style.color="rgb(0, 255, 0)";
-        document.getElementById("character").src = "assets/images/greenChara.png";
+        document.getElementById("character").src = "assets/images/greenChara.PNG";
         document.getElementById("mixedColor").innerHTML="Lime Decora";
     }
 
     // red + yellow = orange
     else if((redPressed == true) && (yellowPressed == true)){
         document.getElementById("title").style.color="rgb(255, 165, 0)";
-        document.getElementById("character").src = "assets/images/orangeChara.png";
+        document.getElementById("character").src = "assets/images/orangeChara.PNG";
         document.getElementById("mixedColor").innerHTML="Clementine Decora";
     }
     
     // red = red
     else if(redPressed == true){
         document.getElementById("title").style.color="rgb(255,0,0)";
-        document.getElementById("character").src = "assets/images/redChara.png";
+        document.getElementById("character").src = "assets/images/redChara.PNG";
         document.getElementById("mixedColor").innerHTML="Strawberry Decora";
     }
 
     // yellow = yellow
     else if(yellowPressed == true){
         document.getElementById("title").style.color="rgb(255,255,0)";
-        document.getElementById("character").src = "assets/images/yellowChara.png";
+        document.getElementById("character").src = "assets/images/yellowChara.PNG";
         document.getElementById("mixedColor").innerHTML="Lemon Decora";
     }
 
     // blue = blue
     else if(bluePressed == true){
         document.getElementById("title").style.color="rgb(0,0,255)";
-        document.getElementById("character").src = "assets/images/blueChara.png";
+        document.getElementById("character").src = "assets/images/blueChara.PNG";
         document.getElementById("mixedColor").innerHTML="Blueberry Decora";
     }
 
     //default
     else{
         document.getElementById("title").style.color="rgb(0, 0, 0)";
-        document.getElementById("character").src = "assets/images/defaultChara.png";
+        document.getElementById("character").src = "assets/images/defaultChara.PNG";
         document.getElementById("mixedColor").innerHTML="Normal";
     }
 }
