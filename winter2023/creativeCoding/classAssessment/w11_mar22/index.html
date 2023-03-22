@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+    html {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+    html {
+      font-family: 'Roboto';
+      font-weight: 100;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+      font-size: 2em;
+      background-color: #bbb;
+    }
+    .calculator {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 300px;
+      box-shadow: 0px 3px 10px 3px #aaa;
+      border-right: 0.01em solid #333;
+      border-bottom: 0.01em solid #333;
+    }
+    .result {
+      width: 100%;
+      background-color: #000;
+      min-height: 2em;
+      color: white;
+    }
+    .result > p {
+      padding: 0 1em;
+      text-align: right;
+      line-height: 2em;
+    }
+    span {
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      width: 25%;
+      background-color: #ccc;
+      line-height: 2em;
+      border-top: 0.01em solid #333;
+      border-left: 0.01em solid #333;
+    }
+    .operator {
+      background-color: #FF9500;
+      color: white;
+    }
+    .double {
+      width: 50%;
+    }
+    .grey {
+      background-color: #aaa;
+    }
+    .clicked {
+      background-color: darken(orange, 10%);
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator" class="calculator">
+    <div class="result">
+      <p>
+        <!-- The expression and the expression will go here -->
+      </p>
+    </div>
+  
+
+  <span class="clearOutput grey" onclick="clearOutput()">AC</span>
+  <span onclick="updateOutput('+')">+</span>
+  <span onclick="updateOutput('%')">%</span>
+  <span onclick="updateOutput('/')" class="operator">/</span>
+
+  <span onclick="updateOutput('7')">7</span>
+  <span onclick="updateOutput('8')">8</span>
+  <span onclick="updateOutput('9')">9</span>
+  <span onclick="updateOutput('*')" class="operator">*</span>
+
+  <span onclick="updateOutput('4')">4</span>
+  <span onclick="updateOutput('5')">5</span>
+  <span onclick="updateOutput('6')">6</span>
+  <span onclick="updateOutput('-')" class="operator">-</span>
+
+  <span onclick="updateOutput('1')">1</span>
+  <span onclick="updateOutput('2')">2</span>
+  <span onclick="updateOutput('3')">3</span>
+  <span onclick="updateOutput('+')" class="operator">+</span>
+
+  <span onclick="updateOutput('0')" class="double">0</span>
+  <span onclick="updateOutput('.')">.</span>
+  <span onclick="calculate()" class="operator">=</span>
+
+</div>
+  <script>
+    //this is where you will see the expressions and the output
+    var output = document.querySelector('.result p');
+
+    function updateOutput(val){
+      if(output.innerHTML === '0' && val !== '.'){
+        output.innerHTML = val;
+      }else{
+        output.innerHTML += val;
+      }
+    }
+
+
+    function clearOutput(){
+      output.innerHTML = "0"
+    }
+
+    
+    function calculate(){
+      var expression = output.innerHTML;
+      var result = eval(expression);
+      output.innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>
