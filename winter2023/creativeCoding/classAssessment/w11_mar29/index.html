@@ -1,0 +1,112 @@
+<!-- Canvas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000" height="1000"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.moveTo(0, 100);
+        ctx.lineTo(200, 0);
+        ctx.stroke();
+
+        ctx.moveTo(400, 100);
+        ctx.lineTo(200, 0);
+        ctx.stroke();
+
+        ctx.moveTo(0, 100);
+        ctx.lineTo(400, 100);
+        ctx.stroke();
+
+        ctx.moveTo(0, 300);
+        ctx.lineTo(400, 300);
+        ctx.stroke();
+        ctx.moveTo(0, 100);
+        ctx.lineTo(0, 300);
+        ctx.stroke();
+
+        ctx.moveTo(0, 300);
+        ctx.lineTo(400, 300);
+        ctx.stroke();
+
+        ctx.moveTo(400, 100);
+        ctx.lineTo(400, 300);
+        ctx.stroke();
+
+    </script>
+    
+
+
+
+    <!-- <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 1000);
+        ctx.stroke();
+    </script> -->
+
+    <!-- <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+    
+        // We first create a variable x that will hold the horizontal position of our circle.
+        let x = 50;
+    
+        // We then define a draw() function that will be called every time we want to redraw the Canvas.
+        function draw() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+          ctx.beginPath();
+          ctx.arc(x, 100, 50, 0, 2 * Math.PI);
+          ctx.fillStyle = 'red';
+          ctx.fill();
+    
+          x += 2;
+          if (x > canvas.width + 100) {
+            x = -50;
+          }
+    
+          requestAnimationFrame(draw);
+        }
+    
+        requestAnimationFrame(draw);
+    </script> -->
+
+    <!-- <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.rect(50, 50, 500, 60);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(50, 115, 500, 60);
+        ctx.fillStyle = 'orange';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(50, 180, 500, 60);
+        ctx.fillStyle = 'green';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(50, 245, 500, 60);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+
+    </script> -->
+
+
+
+</body>
+</html>
