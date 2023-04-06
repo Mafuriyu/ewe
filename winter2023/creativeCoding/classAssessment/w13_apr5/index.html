@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using jQuery</title>
+  <style>
+    body{
+      background: papayawhip;
+      height: 100vh;
+      width: 100vw;
+      place-items: center;
+      overflow: hidden;
+    }
+    .container{
+      display: grid;
+      place-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    .child{
+      align-self: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .smiley{
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+    }
+    .sad{
+      background-image: url(sad.avif);
+    }
+    .happiness{
+      background-image: url(happiness.webp);
+      transform: rotate(3.142rad);
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child">
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      for(i=0; i < 10000; i++){
+        $(".child").append("<span class='smiley sad'></span>");
+      }
+    });
+
+    $(document).on("mouseenter", ".smiley", function(){
+      $(this).removeClass("sad");
+      $(this).addClass("happiness");
+      $(this).animate(
+        { deg: 180 },
+        { duration: 1000}
+      )
+    });
+  </script>
+</body>
+</html>
