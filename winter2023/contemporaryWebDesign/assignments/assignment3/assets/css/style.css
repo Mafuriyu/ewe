@@ -1,0 +1,94 @@
+.image{
+    height: 70px;
+    padding: 50px;
+}
+
+.container{
+    padding: 30px;
+    margin-bottom: 100px;
+    border: solid brown;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Star Rotation */
+#part1cont{
+    height: 400px;
+    width: 400px;
+}
+
+#part1cont:hover #star{
+    transform: rotate(1080deg) scale(3);
+    transition: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#part1cont:not(:hover) #star{
+    transform: rotate(0);
+    transition: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Sunrise and Sun set */
+#sky{
+    height: 400px;
+    width: 800px;
+    background-color: #ff8c00;
+    overflow:hidden;
+}
+
+.sun {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+#sky:hover{
+    animation: sky 4s infinite;
+}
+
+#sky:hover .sun{
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+#part2cont{
+    width: 900px;
+}
+
+@keyframes sun{
+    0% {
+        bottom: -400px;
+        left: 755px;
+        background-color: #ff0000;
+    }
+    50% {
+        bottom: 30px;
+        left: 350px;
+        background-color:  #ffff00;
+    }
+    100% {
+        bottom: -435px;
+        left: -60px;
+        background-color: #ff4500;
+    }
+}
+@keyframes sky{
+    0% {
+        background-color: #ff8c00;
+    }
+    50% {
+        background-color:  #87ceeb;
+    }
+    75%{
+        background-color:  #dc143c;
+    }
+    100% {
+        background-color:  #1c1341;
+    }
+}
