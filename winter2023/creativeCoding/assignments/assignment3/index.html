@@ -9,6 +9,139 @@
 
 <!-- maybe make a monalisa abstract painting/art using the javascript canvas? -->
 <body>
-    
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <style>
+        canvas{
+            border: solid pink;
+            /* background-image: url("Rawr.png"); */
+            background-size: cover
+        }
+        img{
+            position: fixed;
+        }
+    </style>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        //yellow Square
+        ctx.strokeStyle="red";
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.roundRect(180, 200, 432, 400, 80);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(622, 235, 38, 322, 100);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        ctx.roundRect(670, 285, 20, 208, 100);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.roundRect(200, 200, 432, 400, 80);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(642, 235, 38, 322, 100);
+        ctx.stroke();
+        ctx.roundRect(690, 285, 20, 208, 100);
+        ctx.stroke();
+
+        //orange Square
+        ctx.strokeStyle="red";
+        ctx.beginPath();
+        ctx.roundRect(80, 87, 450, 430, 100);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(30, 182, 38, 238, 100);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(0, 232, 20, 150, 100);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.roundRect(100, 87, 450, 430, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(50, 182, 38, 238, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(20, 232, 20, 150, 100);
+        ctx.stroke();
+
+        //red Square
+        ctx.strokeStyle="yellow";
+        ctx.beginPath();
+        ctx.roundRect(292, 30, 432, 430, 100);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(732, 143, 38, 238, 100);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(780, 180, 20, 150, 100);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.roundRect(312, 30, 432, 430, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(752, 143, 38, 238, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(800, 180, 20, 150, 100);
+        ctx.stroke();
+        
+        //head
+        ctx.strokeStyle="black";
+        ctx.lineWidth = 8;
+        ctx.beginPath();
+        ctx.roundRect(255, 208, 280, 280, 260);
+        ctx.stroke();
+
+        //ears
+        ctx.beginPath();
+        ctx.roundRect(200, 320, 80, 120, 300);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.roundRect(520, 320, 80, 120, 300);
+        ctx.stroke();
+        //body
+        ctx.beginPath();
+        ctx.roundRect(285, 520, 230, 200, 60);
+        ctx.stroke();
+        //neck
+        ctx.beginPath();
+        ctx.roundRect(372, 490, 55, 50, 20);
+        ctx.stroke();
+        // ctx.fillStyle = "red";
+        // ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(500, 250);
+        ctx.lineTo(350, 200);
+        ctx.lineTo(250, 350);
+        ctx.lineTo(400, 350);
+        ctx.lineTo(420, 300);
+        ctx.lineTo(480, 350);
+        ctx.lineTo(550, 350);
+        ctx.closePath();
+        ctx.stroke();
+
+
+
+
+
+
+        
+       
+    </script>
+
 </body>
 </html>
