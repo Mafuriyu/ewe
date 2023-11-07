@@ -1,0 +1,10 @@
+<%- include('partials/head.ejs', {page: "Home"}) %>
+<body>
+    <%- include('partials/header.ejs') %>
+    <main>
+        <h1>Home</h1>
+        <%- include('partials/userList.ejs', {users: users}) %>
+    </main>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

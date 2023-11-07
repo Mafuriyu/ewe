@@ -1,0 +1,10 @@
+<ul>
+    <% users.forEach((user) => { %>
+        <li><%= user.firstName %></li>
+        <li><%= user.lastName %></li>
+        <% if (user.birth) { %>
+            <li><%= `${user.birth.day}/${user.birth.month}/${user.birth.year}` %></li>
+        <% } %>
+        
+    <% }) %>
+</ul>
